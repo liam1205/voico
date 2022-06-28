@@ -14,12 +14,14 @@ const IndexPage = () => {
     return (
         <Layout title="Home | Next.js + TypeScript Example">
             <div className="flex flex-col flex-grow justify-center">
-                <div className="text-center flex-none text-xl">
-                    {' '}
-                    <a className="uppercase"> today's meetings</a>
-                </div>
+                <div className="flex-none">
+                    <div className="text-center flex-none text-xl">
+                        {' '}
+                        <a className="uppercase"> today's meetings</a>
+                    </div>
 
-                <div className="text-center"> {today} </div>
+                    <div className="text-center"> {today} </div>
+                </div>
 
                 <div className="basis-9/12 full-height flex grow flex-row">
                     <div className="flex flex-col full-height basis-1/4 text-center p-8 border-solid border-2 border-slate-400 ml-2 mr-2 mt-2 mb-2">
@@ -75,7 +77,7 @@ const IndexPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="basis-3/12 flex-none flex justify-center">
+                <div className=" flex-none flex justify-center">
                     <a href="/newMeeting">
                         <button className="bg-slate-400 hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-2 border-slate-400 hover:border-slate-400">
                             create meeting
