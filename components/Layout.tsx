@@ -28,9 +28,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
         </header>
         <div className="grow flex">{children}</div>
 
-        <footer className="flex-none">
-            <h1>footer</h1>
-        </footer>
+        <footer className="flex-none"></footer>
     </div>
 )
 

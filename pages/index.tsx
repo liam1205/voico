@@ -24,8 +24,8 @@ const IndexPage = () => {
                 </div>
 
                 <div className="grow ">
-                    <div className="flex h-4/5 ">
-                        <div className="flex flex-col overflow-y-auto overflow-y-hidden hover:overflow-scroll text-center p-8 border-solid border-2 border-slate-400 ml-2 mr-2 mt-2 mb-2">
+                    <div className="flex h-4/5 flex-row">
+                        <div className="basis-1/3 flex flex-col overflow-y-auto text-center p-8 border-solid border-2 border-slate-400 ml-2 mr-2 mt-2 mb-2">
                             {/* Überschrift */}
                             <div className="basis-1/12 text-xl">
                                 <a className="uppercase"> past meetings</a>
@@ -40,48 +40,14 @@ const IndexPage = () => {
                                 />
                             </div>
                             {/* vergangene Meetings */}
-                            <div className="basis-9/12">
-                                {/* hier sollen mal die ganze vergangenen Meetings hin, Anzahl soll egal sein */}
-                                hier sollen mal die ganze vergangenen Meetings
-                                hin, Anzahl soll egal sein
-                            </div>
-                            <div className="basis-9/12">
-                                {/* hier sollen mal die ganze vergangenen Meetings hin, Anzahl soll egal sein */}
-                                hier sollen mal die ganze vergangenen Meetings
-                                hin, Anzahl soll egal sein
-                            </div>
-                            <div className="basis-9/12">
-                                {/* hier sollen mal die ganze vergangenen Meetings hin, Anzahl soll egal sein */}
-                                hier sollen mal die ganze vergangenen Meetings
-                                hin, Anzahl soll egal sein
-                            </div>
-                            <div className="basis-9/12">
-                                {/* hier sollen mal die ganze vergangenen Meetings hin, Anzahl soll egal sein */}
-                                hier sollen mal die ganze vergangenen Meetings
-                                hin, Anzahl soll egal sein
-                            </div>
-                            <div className="basis-9/12">
-                                {/* hier sollen mal die ganze vergangenen Meetings hin, Anzahl soll egal sein */}
-                                hier sollen mal die ganze vergangenen Meetings
-                                hin, Anzahl soll egal sein
-                            </div>
-                            <div className="basis-9/12">
-                                {/* hier sollen mal die ganze vergangenen Meetings hin, Anzahl soll egal sein */}
-                                hier sollen mal die ganze vergangenen Meetings
-                                hin, Anzahl soll egal sein
-                            </div>
-                            <div className="basis-9/12">
-                                {/* hier sollen mal die ganze vergangenen Meetings hin, Anzahl soll egal sein */}
-                                hier sollen mal die ganze vergangenen Meetings
-                                hin, Anzahl soll egal sein
-                            </div>
+
                             <div className="basis-9/12">
                                 {/* hier sollen mal die ganze vergangenen Meetings hin, Anzahl soll egal sein */}
                                 hier sollen mal die ganze vergangenen Meetings
                                 hin, Anzahl soll egal sein
                             </div>
                         </div>
-                        <div className="flex flex-col full-height basis-2/4 text-center scroll-smooth p-8">
+                        <div className="basis-1/3 flex flex-col full-height basis-2/4 text-center scroll-smooth p-4">
                             <div className="basis-full full-height overflow-auto">
                                 <div className="border-solid border-2 border-slate-400 ml-2 mr-2 mt-2 mb-2 bg-sky-200">
                                     {/* hier sollen mal die ganzen Meetings des aktuellen Tages hin, Anzahl soll egal sein */}
@@ -90,7 +56,7 @@ const IndexPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col full-height basis-1/4 text-center p-8 border-solid border-2 border-slate-400 ml-2 mr-2 mt-2 mb-2 bg-orange-200">
+                        <div className="basis-1/3 flex flex-col full-height basis-1/4 text-center p-8 border-solid border-2 border-slate-400 ml-2 mr-2 mt-2 mb-2 bg-orange-200">
                             {/* Überschrift */}
                             <div className="basis-7/12 text-xl">
                                 <a className="uppercase"> to-do for tomorrow</a>
@@ -113,13 +79,13 @@ const IndexPage = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="flex-none flex justify-center">
-                    <a href="/newMeeting">
-                        <button className="bg-slate-400 hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-2 border-slate-400 hover:border-slate-400">
-                            create meeting
-                        </button>{' '}
-                    </a>
+                    <div className="flex-none flex justify-center">
+                        <a href="/newMeeting">
+                            <button className="bg-slate-400 hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-2 border-slate-400 hover:border-slate-400">
+                                new meeting
+                            </button>{' '}
+                        </a>
+                    </div>
                 </div>
             </div>
         </Layout>
