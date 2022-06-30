@@ -25,7 +25,7 @@ const IndexPage = () => {
 
                 <div className="grow">
                     <div className="flex h-4/5 flex-row flex-grow ">
-                        <div className="basis-1/5 flex flex-col overflow-y-auto text-center p-8 border-solid border-2 border-slate-400 ml-2 mr-2 mt-2 mb-2">
+                        <div className="overflow-y-auto basis-1/5 flex flex-col text-center p-8 border-solid border-2 border-slate-400 ml-2 mr-2 mt-2 mb-2">
                             {/* Überschrift */}
                             <div className="basis-1/12 text-xl">
                                 <a className="uppercase"> past meetings</a>
@@ -43,35 +43,86 @@ const IndexPage = () => {
 
                             <div className="basis-9/12">
                                 {/* hier sollen mal die ganze vergangenen Meetings hin, Anzahl soll egal sein */}
-                                <p>vergangene Meetings</p>
+                                <div className="uppercase">
+                                    <br></br>
+                                    {/* Meeting 1*/}
+                                    <p className="text-left">
+                                        <a
+                                            href="meeting1"
+                                            className="font-bold"
+                                        >
+                                            04.07.2022 - weekly stand up call
+                                        </a>
+                                    </p>
+                                    <p className="text-left">
+                                        <a className="font-bold"> Goal: </a>
+                                        <a>Build Documentation Code Review</a>
+                                    </p>
+                                    <p className="text-left">
+                                        <a className="font-bold">
+                                            participants:{' '}
+                                        </a>
+                                        <a>developer team</a>
+                                    </p>
+                                    <p className="text-left underline">
+                                        <a href="">View protocoll</a>
+                                    </p>
+                                    <br></br>
+
+                                    {/* Meeting 2*/}
+                                    <p className="text-left">
+                                        <a
+                                            href="meeting2"
+                                            className="font-bold"
+                                        >
+                                            11.07.2022 - weekly stand up call
+                                        </a>
+                                    </p>
+                                    <p className="text-left">
+                                        <a className="font-bold"> Goal: </a>
+                                        <a>Build Documentation Code Review</a>
+                                    </p>
+                                    <p className="text-left">
+                                        <a className="font-bold">
+                                            participants:{' '}
+                                        </a>
+                                        <a>developer team</a>
+                                    </p>
+                                    <p className="text-left underline">
+                                        <a href="">View protocoll</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div className="basis-3/5 flex flex-col full-height text-center scroll-smooth p-4">
-                            <div className="basis-full full-height overflow-auto">
+                            <div className="basis-full full-height">
                                 <div className="border-solid border-2 border-slate-400 ml-2 mr-2 mt-2 mb-2 bg-blue-200">
-                                    {/* hier sollen mal die ganzen Meetings des aktuellen Tages hin, Anzahl soll egal sein */}
+                                    {/* Meeting 1 */}
                                     aktuelle Meeting
                                 </div>
                             </div>
                         </div>
                         <div className="basis-1/5 flex flex-col full-height text-center p-8 border-solid border-2 border-slate-400 ml-2 mr-2 mt-2 mb-2 bg-orange-200">
                             {/* Überschrift */}
-                            <div className="basis-7/12 text-xl">
-                                <a className="uppercase"> to-do for tomorrow</a>
-                            </div>
-                            {/* To Dos */}
-                            <div className="basis-4/12">
-                                {/* hier sollen mal die ganze vergangenen Meetings hin, Anzahl soll egal sein */}
-                                <p>to dos</p>
-
-                                {/* neue Präsentation */}
-                                <Link href=""> . . . </Link>
-                                <div>
-                                    <a className="uppercase">
-                                        create presentation for client
-                                    </a>
+                            <div className="flex flex-col basis-7/12 uppercase">
+                                <div className="basis-2/6 text-xl">
+                                    <p> to-do for tomorrow</p>
+                                </div>
+                                <div className="basis-4/6">
+                                    <p className="text-left">
+                                        🔥 prepare budget plan
+                                        <br></br>
+                                    </p>
+                                    <p className="text-left">
+                                        🔥 Fix bugs in code <br></br>
+                                    </p>
+                                    <p className="text-left">
+                                        🔥create presentation for management
+                                        <br></br>
+                                    </p>
                                 </div>
                             </div>
+                            {/* To Dos */}
                         </div>
                     </div>
                     <div className="flex-none flex justify-center">

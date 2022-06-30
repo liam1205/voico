@@ -10,11 +10,15 @@ const newMeetingPage = () => {
                     {' '}
                     NEW MEETING
                 </div>
-                <div className="flex flex-row ">
-                    <div className="p-5 flex flex-col basis-1/2">
+                <div className="flex flex-row">
+                    <div
+                        className="center p-8 flex flex-col basis-1/2 pl-40
+                        
+                    "
+                    >
                         <div className="basis-1/3">
                             {' '}
-                            <p className="uppercase">title:</p>
+                            <p className="uppercase"> title:</p>
                             <textarea
                                 cols="50"
                                 rows="1"
@@ -23,7 +27,8 @@ const newMeetingPage = () => {
                             ></textarea>
                         </div>
                         <div className="basis-1/3">
-                            <p className="uppercase">date:</p>
+                            <p className="uppercase"> date:</p>
+                            <p></p>
                             <input
                                 size="100"
                                 type="date"
@@ -32,7 +37,7 @@ const newMeetingPage = () => {
                             ></input>
                         </div>
                         <div className="basis-1/3">
-                            <p className="uppercase">goal:</p>
+                            <p className="uppercase"> goal:</p>
                             <textarea
                                 cols="50"
                                 rows="1"
@@ -41,9 +46,12 @@ const newMeetingPage = () => {
                             ></textarea>
                         </div>
                     </div>
-                    <div className="p-5 flex flex-col basis-1/2 align-center">
+                    <div
+                        className="p-8 flex flex-col basis-1/2 float-right pl-40
+                    "
+                    >
                         <div className="basis-1/3">
-                            <p className="uppercase">agenda:</p>
+                            <p className="uppercase"> agenda:</p>
                             <textarea
                                 cols="50"
                                 rows="8"
@@ -52,7 +60,7 @@ const newMeetingPage = () => {
                             ></textarea>
                         </div>
                         <div className="basis-1/3">
-                            <p className="uppercase">participants:</p>
+                            <p className="uppercase"> participants:</p>
                             <textarea
                                 cols="50"
                                 rows="5"

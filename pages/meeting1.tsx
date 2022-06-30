@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
 
-const meetingPage = () => {
+const meetingPage1 = () => {
     // here you can add objects
     var dateOfMeeting = new Date().toDateString()
     var meetingName = String('Weekly Stand-Up Protocoll')
@@ -108,4 +108,4 @@ const meetingPage = () => {
     )
 }
 
-export default meetingPage
+export default meetingPage1
