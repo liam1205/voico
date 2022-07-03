@@ -65,7 +65,9 @@ const IndexPage = () => {
                                         <a>developer team</a>
                                     </p>
                                     <p className="text-left underline">
-                                        <a href="">View protocoll</a>
+                                        <Link href="/protocoll">
+                                            View protocoll
+                                        </Link>
                                     </p>
                                     <br></br>
 
