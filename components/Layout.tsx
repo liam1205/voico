@@ -1,6 +1,8 @@
 import React, { ReactNode } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import Logo from '../utils/voico.jpg'
+import Image from 'next/image'
 
 type Props = {
     children?: ReactNode
@@ -18,12 +20,11 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
             />
         </Head>
         <header className="border-b-2 flex-none border-slate-400">
-            <div className="py-3 px-5 text-lg">
-                <Link href="">. . .</Link>
-                <a className="float-right">
-                    {' '}
-                    <Link href="/"> VOICO </Link>
-                </a>
+            <div className="text-xl py-3 px-5 text-lg">
+                <a>. . .</a>
+                <p className="float-right">
+                    <Image src={Logo} alt="VOICO" width={40} height={40} />
+                </p>
             </div>
         </header>
         <div className="grow flex">{children}</div>
